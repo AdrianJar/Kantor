@@ -1,0 +1,20 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  ::after,
+  ::before {
+    box-sizing: inherit;
+  }
+
+  .body{
+    font-family: "Lato", sans-serif;
+    background: linear-gradient(to right, #23074d, #cc5333);
+    zoom: 100%;
+  }
+ 
+  .icon{
+    width: 20px;
+    height: 20px;
+}

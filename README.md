@@ -1,5 +1,5 @@
 # Praca-domowa-modu--4---Kantor Adrian Jaroszuk
 
-##Demo:
+## Demo:
 
 https://adrianjar.github.io/Praca-domowa-modu--4---Kantor/

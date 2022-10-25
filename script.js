@@ -5,7 +5,7 @@ let buttonElement = document.querySelector(".js-button")
 let formElement = document.querySelector(".js-form")
 let currencyFrom = document.querySelector(".currency1")
 let currencyTo = document.querySelector(".currency2")
-
+    
 
 formElement.addEventListener("input", (event) => {
     event.preventDefault();

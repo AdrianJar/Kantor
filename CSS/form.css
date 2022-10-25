@@ -1,3 +1,9 @@
+.form{
+  padding:0;
+  border-radius: 20px;
+  background: linear-gradient(to right, #23074d, #cc5333);
+}
+
 .form__fieldset {
   background-color: rgba(119, 119, 119, 0.399);
   border: 1px solid #ccc;
@@ -58,4 +64,3 @@
   background-color: hsl(0, 0%, 95%);
   color: black;
 }
-

@@ -2,4 +2,4 @@
 
 ## Demo:
 
-https://adrianjar.github.io/Praca-domowa-modu--4---Kantor/
+https://adrianjar.github.io/Kantor/

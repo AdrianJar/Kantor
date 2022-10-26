@@ -15,3 +15,4 @@ https://adrianjar.github.io/Kantor/
 -  HTML
 -  CSS 
 -  JavaScript
+-  BEM

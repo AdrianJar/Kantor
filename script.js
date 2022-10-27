@@ -1,41 +1,47 @@
-
 {
-    const number1Element = document.querySelector(".js-number1")
-    const courseElement = document.querySelector(".js-course")
-    const number2Element = document.querySelector(".js-number2")
-    const formElement = document.querySelector(".js-form")
+    const switchCurrency = () => {
+        const currencyFrom = document.querySelector(".currency1")
+        const currencyTo = document.querySelector(".currency2")
+        const buttonElement = document.querySelector(".js-button")
 
-    formElement.addEventListener("input", (event) => {
-        event.preventDefault();
+        buttonElement.addEventListener("click", () => {
+            currencyFrom.classList.toggle("js-EUR");
+            number2.innerText = "";
 
-        const number1 = number1Element.value;
-        const course = courseElement.value;
+            if (currencyFrom.classList.contains("js-EUR")) {
+                currencyFrom.innerText = "PLN:";
+                currencyTo.innerText = "EUR:";
+                document.getElementById("course").value = 0.21
+            } else {
+                currencyFrom.innerText = "EUR:";
+                currencyTo.innerText = "PLN:";
+                document.getElementById("course").value = 4.81
+            }
+        })
+    };
 
-        const number2 = number1 * course;
+    const calculate = () => {
+        const number1Element = document.querySelector(".js-number1")
+        const courseElement = document.querySelector(".js-course")
+        const formElement = document.querySelector(".js-form")
 
-        document.getElementById("number2").value = number2.toFixed(2);
-    })
-}
+        formElement.addEventListener("input", (event) => {
+            event.preventDefault();
 
-{
+            const number1 = number1Element.value;
+            const course = courseElement.value;
 
-    const buttonElement = document.querySelector(".js-button")
-    const currencyFrom = document.querySelector(".currency1")
-    const currencyTo = document.querySelector(".currency2")
+            const number2 = number1 * course;
 
-    buttonElement.addEventListener("click", () => {
-        currencyFrom.classList.toggle("js-EUR");
-        number2.innerText = "";
+            document.getElementById("number2").value = number2.toFixed(2);
+        })
 
-        if (currencyFrom.classList.contains("js-EUR")) {
-            currencyFrom.innerText = "PLN:";
-            currencyTo.innerText = "EUR:";
-            document.getElementById("course").value = 0.21
-        } else {
-            currencyFrom.innerText = "EUR:";
-            currencyTo.innerText = "PLN:";
-            document.getElementById("course").value = 4.81
-        }
+    };
 
-    });
-}
+    const init = () => {
+        switchCurrency()
+        calculate()
+    }
+
+    init()
+};
